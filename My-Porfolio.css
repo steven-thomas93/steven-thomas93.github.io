@@ -1,10 +1,12 @@
 * {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
 }
 
 :root {
-
+  --project-tile: #303841;
+  --navbar: #b30000;
 }
 
 @media screen and (max-width: 600px) {
@@ -13,6 +15,16 @@
     width: 100%;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.remove-underline {
+  text-decoration: none;
+}
+
+/* Welcome Section */
 
 #welcome-section {
   height: 100vh;
@@ -36,38 +48,39 @@ h4 {
   text-align: center;
 }
 
+/* Nav Section */
+
 ul {
   list-style-type: none;
   padding-right: 5%;
-  overflow: hidden;
-}
-
-li {
-  float: right;
+  padding-top: 1.5%;
 }
 
 li a {
   color: black;
   text-decoration: none;
-  display: block;
   padding: 0 10px 0;
   border-right: solid 2px black;
-  text-align: center;
+  float: right;
 }
 
 li a:hover {
   background-color: #8c8c8c;
 }
 
-#navbar {
-  background-color: #ffff00;
-  z-index: 1;
-}
-
 nav {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 50px;
+  background-color: var(--navbar);
+  z-index: 10;
+}
+
+/* Projects Section */
+
+.project-header {
+padding-bottom: 30px;
 }
 
 #projects {
@@ -77,10 +90,39 @@ nav {
   width: 100vw;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-title {
+  color: white;
+  font-size: 20px;
+  padding: 10%;
+  text-align: center;
+}
+
+.project-tile {
+  background: var(--project-tile);
+}
+
+.project-img {
+  object-fit: cover;
+  height: 20px;
+  width: 100%;
+}
+
+/* Contact Section */
+
 #contact {
   background-color: #140033;
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   top: 97vh;
   color: white;
@@ -88,5 +130,15 @@ nav {
 
 .contact-header {
   text-align: center;
-  top: 40px;
+  top: 100px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 75%;
+  width: 90%;
 }
