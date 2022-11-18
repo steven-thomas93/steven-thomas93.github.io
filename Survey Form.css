@@ -1,0 +1,30 @@
+h1,
+p {
+  text-align: center;
+}
+
+#description {
+  font-size: 20px;
+  font-style: italic;
+}
+
+form {
+position: relative;
+top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  height: 90px;
+}
+
+#submit {
+  background-color: green;
+  color: white;
+  position: relative;
+  top: 25px;
+}
