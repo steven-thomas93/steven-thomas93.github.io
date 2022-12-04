@@ -6,7 +6,7 @@
 
 :root {
   --project-tile: #303841;
-  --navbar: #b30000;
+  --navbar: #404040;
 }
 
 @media screen and (max-width: 600px) {
