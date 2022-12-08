@@ -5,7 +5,7 @@
 }
 
 :root {
-  --project-tile: #303841;
+  --project-tile: black;
   --navbar: #404040;
 }
 
@@ -120,12 +120,11 @@ padding-bottom: 30px;
 /* Contact Section */
 
 #contact {
-  background-color: #140033;
+  background-color:  black;
   position: relative;
   height: 100vh;
   width: 100vw;
   top: 97vh;
-  color: white;
 }
 
 .contact-header {
