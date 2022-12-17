@@ -8,6 +8,44 @@ p {
   font-style: italic;
 }
 
+#name-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#email-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#number-label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#section1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#section2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#subsec2 {
+  font-size: 18px;
+}
+
+#section3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#subsec3 {
+  font-size: 18px;
+}
+
 form {
 position: relative;
 top: 50px;
@@ -16,15 +54,23 @@ top: 50px;
 .flex-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdown {
+  width: 120px;
 }
 
 .textarea {
   height: 90px;
+  width: 400px;
 }
 
 #submit {
   background-color: green;
   color: white;
+  width: 150px;
   position: relative;
   top: 25px;
 }
