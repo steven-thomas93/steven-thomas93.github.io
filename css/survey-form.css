@@ -54,8 +54,7 @@ top: 50px;
 .flex-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
+  align-items: center;
 }
 
 #dropdown {
