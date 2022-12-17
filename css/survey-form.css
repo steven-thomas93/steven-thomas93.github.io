@@ -55,7 +55,7 @@ top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: left;
+  align-items: left;
 }
 
 #dropdown {
