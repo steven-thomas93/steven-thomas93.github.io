@@ -28,7 +28,7 @@ html {
 
 #welcome-section {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: #6600cc;
   text-align: center;
 }
@@ -88,7 +88,7 @@ padding-bottom: 30px;
   position: absolute;
   background-color: #009900;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .project-grid {
@@ -124,7 +124,7 @@ padding-bottom: 30px;
   background-color:  black;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   top: 97vh;
 }
 
