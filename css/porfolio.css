@@ -62,6 +62,7 @@ li a {
   padding: 0 10px 0;
   border-right: solid 2px black;
   float: right;
+  text-align: center;
 }
 
 li a:hover {
