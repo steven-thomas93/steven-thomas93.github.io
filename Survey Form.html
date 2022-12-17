@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>Survey Form</title>
-    <link rel="stylesheet" href="css/survey-form.css">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     </head>
   <header>
     <h1 id="title" >Survey Form</h1>
-    <p id="description" >Thank you for taking the time to complete this survey</p>
+    <p id="description" >Thank you for taking the time to clomplete this survey</p>
     </header>
     <body>
     <form id="survey-form">
@@ -19,7 +19,7 @@
         <br> <div class="topic-space"></div>
       <label id="number-label">Age (optional): <input min="12" max="120" type="number" id="number" placeholder="18" /></label>
         <br> <div class="topic-space"></div>
-      <label> Choose one of the options below </label>
+      <label id="section1"> Choose one of the options below </label>
         <br>
       <select id="dropdown" required>
         <option>(select one)</option>
@@ -27,15 +27,19 @@
         <option>That one</option>
       </select>
         <br>
-      <label id="either-or-option"> Pick one of these </label>
-     <label>Option 1 <input type="radio" value="recommend" name="recommend"></label>
-      <label>Option 2 <input type="radio" value="recommend" name="recommend"></label>
+      <label id="section2"> Please pick one of these options </label>
+      <br>
+     <label id="subsec2">Option 1 <input type="radio" value="recommend" name="recommend"></label>
+      <label id="subsec2">Option 2 <input type="radio" value="recommend" name="recommend"></label>
         <br>
-        <label> What would you like to see?  
+        <label id="section3"> What would you like to see?  
           </label>
-      <label>Front-end projects<input type="checkbox" value="1"></label>
-      <label>Back-end projects<input type="checkbox" value="2"></label>
-      <label>Web Design projects<input type="checkbox" value="3"></label>
+          <br>
+      <label id="subsec3">Front-end projects<input type="checkbox" value="1"></label>
+      <br>
+      <label id="subsec3">Back-end projects<input type="checkbox" value="2"></label>
+      <br>
+      <label id="subsec3">Web Design projects<input type="checkbox" balue="3"></label>
         <br>
       <textarea class="textarea" placeholder="Additional comments"></textarea>
       <button id="submit" type="submit">Submit</button>
