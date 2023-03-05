@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: black;
+    transition: background-color 0.5s ease;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  body.dark-mode li {
+    color: black;
+  }
+
+  #task-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #task-list li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #task-list li.completed {
+    background-color: #ddd;
+    text-decoration: line-through;
+  }
+
+  #task-list li button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  #task-list li button:hover {
+    background-color: #3e8e41;
+  }
+
+  #add-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #add-task-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  #add-task-form input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  #add-task-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  #add-task-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  #clear-completed {
+    display: block;
+    margin: auto;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  #clear-completed:hover {
+    background-color: #d32f2f;
+  }
+
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #dark-mode-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: black;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #dark-mode-button.dark-mode {
+    color: #f1c40f;
+  }
